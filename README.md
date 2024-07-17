@@ -9,7 +9,7 @@ than we check that in sorted part if element is present and find between in and 
 if in sorted part range if element is not , than we leave the sorted part and our seach space will be unsorted part.
 
 
-```
+```cpp
 int Search(vector<int> arr, int key, int size)
 {
     int low = 0, heigh = size - 1;
@@ -54,7 +54,7 @@ int Search(vector<int> arr, int key, int size)
 
 <if(arr[low]==arr[mid]&&arr[mid]==arr[heigh]) low++,heigh--,continue; >
 
-```
+```cpp
   int Search(vector<int> arr, int key, int size)
 {
     int low = 0, heigh = size - 1;
@@ -107,7 +107,7 @@ int Search(vector<int> arr, int key, int size)
  if right part is sorted than take arr[mid] and send for find in left part
 - for more optimization if both part is soted than take arr[low] and break the loop
 
- ```
+ ```cpp
  
  int FindMin(vector<int> arr, int size)
 {
